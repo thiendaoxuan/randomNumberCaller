@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Random Number Picke</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/the-big-picture.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+		<div class="container">
+			<button type="button" class="btn btn-dark unselectable" id = 'start-random'><span unselectable="on">Let's the random begin</span></button>
+			<button class="btn-dark" type="button" data-toggle="modal" data-target="#inputModal">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 description">
+					<h1 class="mt-5">Random Number Picker</h1>
+					<p>And the lucky number is</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<p class="mt-5 number" id = 'number'>9999</p>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<div class="modal fade" tabindex="-1" role="dialog" id="inputModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Number Picker Settings</h5>
+					
+				</div>
+				<div class="modal-body">		
+					
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-default">Min</span>
+					  </div>
+					  <input type="number" id="random-min" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+
+
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-default">Max</span>
+					  </div>
+					  <input type="number" id="random-max" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-default">Time (seconds)</span>
+					  </div>
+					  <input type="number" id="random-time" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="js/numberpicker.js"></script>
+
+</body>
+
+</html>
