@@ -3,8 +3,9 @@ A site for picking random number which elegant UI and background music. Suitable
 https://thiendaoxuan.github.io/randomNumberCaller/
 
 Main function :
-  Random function with music in the background. Music credit belongs to Youtube Studio free music.
-  Update min, max, random time in the bottom nav-bar.
+
+  - Random function with music in the background. Music credit belongs to Youtube Studio free music.
+  - Update min, max, random time in the bottom nav-bar.
  
 # No server, can run offline
 Without Internet, can just download repo in advance and run index.html
