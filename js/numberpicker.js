@@ -7,7 +7,7 @@ let getRndInteger = (min, max) => Math.floor(Math.random() * (max - min + 1) ) +
 let inintRandomness =  (min, max, time) => {
 	time = time * 1000;
 	var numberDisplay = document.getElementById('number');
-	let interval = time/100;
+	let interval = 50;
 	let currentWaitTime = 0;
 	while (currentWaitTime < time - interval) {
 		setTimeout (() => numberDisplay.innerHTML = getRndInteger(min, max), currentWaitTime);
